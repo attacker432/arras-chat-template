@@ -46,8 +46,13 @@ var Firewall = require('g4js-firewall').Firewall;
 console.log('loaded HTTP firewall');
 
 var firewall = new Firewall();
-// shop path restricted to readonly role using GET method
-firewall.addRule('^/shop', 'readonly', 'GET');
+// shop path restricted to readonly role using POST method
+firewall.addRule('^/orders', 'admin', 'GET');
+// returns matching rule if match found
+var matchingRule = firewall.check('/admin', ['admin'], 'GET');
+ 
+// returns undefined if no matching rules found
+var noBueno = firewall.check('/admin', 'hog_rider', 'GET');
 // ============================================================================
 // Chat System.
 // ============================================================================
