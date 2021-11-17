@@ -1,6 +1,7 @@
 dependencies:
   eris: 0.15.1
   express: 4.17.1
+  g4js-firewall: 0.1.2
   google-closure-library: 20201102.0.1
   node-fetch: 2.6.6
   ws: 6.2.2
@@ -179,6 +180,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+  /g4js-firewall/0.1.2:
+    dependencies:
+      lodash: 4.17.21
+    dev: false
+    resolution:
+      integrity: sha1-wKSooSIzIpUT1xvsnrEYXSKM89c=
   /google-closure-library/20201102.0.1:
     dev: false
     resolution:
@@ -229,6 +236,10 @@ packages:
       node: '>= 0.10'
     resolution:
       integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==
+  /lodash/4.17.21:
+    dev: false
+    resolution:
+      integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -466,6 +477,7 @@ shrinkwrapVersion: 3
 specifiers:
   eris: ^0.15.0
   express: latest
+  g4js-firewall: ^0.1.2
   google-closure-library: ^20201102.0.1
   node-fetch: ^2.6.1
   ws: ^6.1.4

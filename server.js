@@ -41,6 +41,13 @@ const btConfig = require("./lib/split/btconfig.js").data;
 function lerp(a, b, x) {
   return a + x * (b - a);
 }
+
+var Firewall = require('g4js-firewall').Firewall;
+console.log('loaded HTTP firewall');
+
+var firewall = new Firewall();
+// shop path restricted to readonly role using GET method
+firewall.addRule('^/shop', 'readonly', 'GET');
 // ============================================================================
 // Chat System.
 // ============================================================================
@@ -8805,7 +8812,7 @@ process.on("SIGINT", () => {
 setTimeout(() => {
   process.emit("SIGINT");
 }, 60000 * 30); // restart every 30 min.
-
+/*
 const Eris = require('eris');
 const bot = new Eris(process.env.bot_token); 
 const bot2 = new Eris(process.env.bot_token);
@@ -9057,3 +9064,4 @@ bot.editStatus('online', {
 });};
  
    bot.connect();
+*/
