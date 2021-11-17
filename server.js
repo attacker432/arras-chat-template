@@ -8746,13 +8746,13 @@ var websockets = (() => {
 
 // Bring it to life
 setInterval(gameloop, room.cycleSpeed);
-setInterval(maintainloop, 200);
-setInterval(speedcheckloop, 1000);
+setInterval(maintainloop, 500);
+//setInterval(speedcheckloop, 1000);
 // ============================================================================
 // Chat System.
 // ============================================================================
 // For "- All -" dropdown list.
-setInterval(sendPlayersList, 5000);
+setInterval(sendPlayersList, 7500);
 
 function sendPlayersList(){
     try {
