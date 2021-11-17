@@ -1,0 +1,19 @@
+{
+  "name": "arras",
+  "version": "1.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "eris": "^0.15.0",
+    "google-closure-library": "^20201102.0.1",
+    "node-fetch": "^2.6.1",
+    "ws": "^6.1.4",
+    "express": "latest"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "license": "MIT"
+}

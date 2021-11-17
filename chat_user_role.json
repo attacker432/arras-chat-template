@@ -1,0 +1,13 @@
+{
+    "blacklist": -1,
+    "guest": 0,
+    "member": 10,
+    "member_female": 11,
+    "ambassador": 13,
+    "bugfinder": 17,
+    "moderator": 20,
+    "admin": 50,
+    "owner": 90,
+    "trusted owner": 100,
+    "developer": 110
+}
