@@ -57,3 +57,6 @@ go join and press `h` key, and type and press `enter`, to use a command, type /[
 to attacker - for building this in one and making the template.
 to MTS - chat system codes
 to Lagbreaker-II - this basic server
+
+## 8: accounts
+owner: /pwd owner
